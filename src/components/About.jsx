@@ -114,10 +114,10 @@ skills: [
                         initial={{ opacity: 0, x: 50 }}
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.3 }}
-                        className="relative"
+                        className="relative w-full max-w-full overflow-hidden"
                     >
                         {/* Code Editor Window */}
-                        <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-700 bg-[#1e1e1e]">
+                        <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-700 bg-[#1e1e1e] w-full max-w-full">
                             {/* Window Header */}
                             <div className="flex items-center gap-2 px-4 py-3 bg-[#2d2d2d] border-b border-gray-700">
                                 <div className="flex gap-2">
@@ -129,7 +129,7 @@ skills: [
                             </div>
 
                             {/* Code Content */}
-                            <div className="relative">
+                            <div className="relative overflow-x-auto max-w-full">
                                 <SyntaxHighlighter
                                     language="javascript"
                                     style={vscDarkPlus}
@@ -138,8 +138,10 @@ skills: [
                                         padding: '1.5rem',
                                         fontSize: '0.875rem',
                                         background: '#1e1e1e',
+                                        maxWidth: '100%',
                                     }}
                                     showLineNumbers
+                                    wrapLongLines={true}
                                 >
                                     {codeSnippet}
                                 </SyntaxHighlighter>
