@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modern Portfolio Website 🚀
 
 A stunning, professional portfolio website built with React, Tailwind CSS, and Three.js. Perfect for Computer Science students and Software Developers looking for internships and full-time roles.
@@ -158,3 +159,6 @@ Feel free to reach out if you have any questions or suggestions!
 ---
 
 **Made with ❤️ using React, Tailwind CSS, and Three.js**
+=======
+# my-portfolio
+>>>>>>> 87fe461c7c9b010936ce26def5a1ea87fd61ff68
