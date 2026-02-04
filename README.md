@@ -1,50 +1,79 @@
-<<<<<<< HEAD
 # Modern Portfolio Website 🚀
 
-A stunning, professional portfolio website built with React, Tailwind CSS, and Three.js. Perfect for Computer Science students and Software Developers looking for internships and full-time roles.
+A stunning, professional portfolio website built with **React**, **Tailwind CSS**, and **Three.js**. Designed for Computer Science students and Software Developers looking to showcase their technical expertise.
 
-TO see my Portfolio:Please visit-https://kaushals-portfolio2424.vercel.app/
+**Live Demo:** [kaushals-portfolio2424.vercel.app](https://kaushals-portfolio2424.vercel.app/)
+
+---
 
 ## ✨ Features
 
-### Core Sections
-- **Hero Section** - Dynamic typing effect with 3D interactive sphere background
-- **About Me** - Professional bio and introduction
-- **Skills** - Interactive grid showcasing technical expertise with brand-colored shadows
-- **Projects** - Glassmorphism cards with hover effects, GitHub links, and live demos
-- **Experience/Education** - Vertical timeline layout
-- **Contact** - Functional form with social media integration
+### 🎨 Design & UX
+- 💎 **Glassmorphism UI** - Modern, translucent design elements with gradient accents.
+- 🎨 **Smooth Animations** - Powered by Framer Motion for a premium feel.
+- 📱 **Fully Responsive** - Optimized for all devices (Mobile, Tablet, Desktop).
+- 🎭 **3D Elements** - Interactive Three.js visuals for a futuristic look.
+- 🌙 **Dark Theme** - Sleek dark mode design.
 
-### Design & UX
-- 🌙 **Dark Theme** with gradient accents (cyan/blue)
-- 💎 **Glassmorphism UI** - Modern, translucent design elements
-- 🎨 **Smooth Animations** - Framer Motion powered transitions
-- 📱 **Fully Responsive** - Optimized for desktop, tablet, and mobile
-- 🎯 **Smooth Scrolling** - Seamless navigation between sections
+### 🛠️ Technical Sections
+- **Hero Section** - Dynamic typing effect with interactive 3D background.
+- **Skills** - Interactive grid showcasing technical expertise.
+- **Projects Showcase** - Detailed project cards with GitHub and Live Demo links.
+- **Experience/Education** - Professional timeline layout.
+- **SEO Optimized** - Meta tags and Open Graph support for better visibility.
+- 📄 **Resume Download** - Easy one-click PDF download.
 
-### Technical Features
-- ⚡ **Fast Loading** - Optimized with Vite
-- 🔍 **SEO Optimized** - Meta tags and Open Graph support
-- 🎭 **3D Elements** - Three.js powered interactive visuals
-- 📄 **Resume Download** - One-click PDF download
-- ♿ **Accessibility Friendly** - Semantic HTML and ARIA labels
+---
+
+## 🚀 Projects
+
+### 1. E-Portfolio Website
+A modern portfolio website built with React, Tailwind CSS, and Three.js for 3D elements.
+- **Tech Stack:** React, Tailwind, Vite, Three.js, Framer Motion
+- [GitHub Repo](https://github.com/kau-shal2424/my-portfolio) | [Live Demo](https://kaushals-portfolio2424.vercel.app/)
+
+### 2. E-KART
+A full-stack e-commerce web application with user shopping features and an admin analytics dashboard.
+- **Tech Stack:** React, Tailwind, Flask, MySQL
+- [GitHub Repo](https://github.com/kau-shal2424/E-Kart)
+
+### 3. Braille Bridge
+An AI-powered accessibility platform that converts documents and images into Braille and speech using OCR and multi-language translation.
+- **Tech Stack:** React.js, FastAPI, Flask, OCR (Tesseract), Braille Translation (Louis), Text-to-Speech APIs
+- [GitHub Repo](https://github.com/kau-shal2424/BrailleBridge)
+
+### 4. Smart Weather Predictor
+A machine learning–based web application that predicts temperature, humidity, and wind speed using real-time data from the OpenWeatherMap API.
+- **Tech Stack:** Flask, Python, OpenWeatherMap API, Scikit-learn, Pandas, Numpy
+- [GitHub Repo](https://github.com/kau-shal2424/Smart_weather_predicitor) | [Live Demo](https://weather-vision.onrender.com/)
+
+### 5. Flight Seat Allocator
+A responsive web application built using React that provides an interactive user interface for seat allocation using greedy algorithms.
+- **Tech Stack:** React.js, CRA, Greedy Algorithm, Firebase, CSS
+- [GitHub Repo](https://github.com/kau-shal2424/Flight-Seat-Allocator)
+
+### 6. Distributed Mini File System (DMFS)
+A distributed file system implementation with a React frontend, similar to GFS and HDFS.
+- **Tech Stack:** React, Python, Flask (REST API), Socket Programming
+- [GitHub Repo](https://github.com/kau-shal2424/Distributed-Mini-File-System)
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework:** React 19
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS v3
-- **Animations:** Framer Motion
+- **Frontend:** React 19, Vite, Tailwind CSS, Framer Motion
 - **3D Graphics:** Three.js, React Three Fiber, Drei
-- **Icons:** React Icons
-- **Typography:** Google Fonts (Poppins, Inter)
-- **SEO:** React Helmet Async
+- **Backend (Project Specific):** Flask, FastAPI, Python, Node.js
+- **Database:** MySQL, Firebase
+- **Tools:** Git, Vercel, npm
 
-## 📦 Installation
+---
+
+## 📦 Getting Started
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/kau-shal2424/my-portfolio.git
    cd my-portfolio
    ```
 
@@ -63,102 +92,28 @@ TO see my Portfolio:Please visit-https://kaushals-portfolio2424.vercel.app/
    npm run build
    ```
 
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
+---
 
-## 🎨 Customization
-
-### 1. Personal Information
-Update the following files with your information:
-- `src/components/Hero.jsx` - Name, role, and tagline
-- `src/components/About.jsx` - Bio and introduction
-- `src/components/Projects.jsx` - Your projects
-- `src/components/Experience.jsx` - Work history and education
-- `src/components/Contact.jsx` - Contact information
-- `src/components/Footer.jsx` - Social media links
-
-### 2. Resume
-Replace `public/resume.pdf` with your actual resume PDF file.
-
-### 3. Colors & Theme
-Edit `tailwind.config.js` to customize colors:
-```javascript
-colors: {
-  primary: "#0f172a",    // Dark Blue
-  secondary: "#1e293b",  // Slate
-  accent: "#38bdf8",     // Sky Blue
-}
-```
-
-### 4. SEO
-Update meta tags in `src/components/SEO.jsx`:
-- Title
-- Description
-- Keywords
-- Canonical URL
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 my-portfolio/
-├── public/
-│   └── resume.pdf          # Your resume PDF
+├── public/              # Static assets (Images, Resume PDF)
 ├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx      # Navigation bar
-│   │   ├── Hero.jsx        # Hero section with 3D
-│   │   ├── Hero3D.jsx      # 3D sphere component
-│   │   ├── About.jsx       # About section
-│   │   ├── Skills.jsx      # Skills grid
-│   │   ├── Projects.jsx    # Projects showcase
-│   │   ├── Experience.jsx  # Timeline
-│   │   ├── Contact.jsx     # Contact form
-│   │   ├── Footer.jsx      # Footer
-│   │   └── SEO.jsx         # SEO meta tags
-│   ├── App.jsx             # Main app component
-│   ├── main.jsx            # Entry point
-│   └── index.css           # Global styles
-├── tailwind.config.js      # Tailwind configuration
-├── postcss.config.js       # PostCSS configuration
-└── package.json            # Dependencies
+│   ├── assets/          # Project images and icons
+│   ├── components/      # React components (Navbar, Hero, Projects, etc.)
+│   ├── App.jsx          # Main application component
+│   └── main.jsx         # Entry point
+├── tailwind.config.js   # Style configuration
+└── vite.config.js       # Build configuration
 ```
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Import project in [Vercel](https://vercel.com)
-3. Deploy with one click
-
-### Netlify
-1. Push your code to GitHub
-2. Import project in [Netlify](https://netlify.com)
-3. Build command: `npm run build`
-4. Publish directory: `dist`
-
-### GitHub Pages
-```bash
-npm run build
-# Deploy the dist folder to gh-pages branch
-```
+---
 
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 💬 Contact
-
-Feel free to reach out if you have any questions or suggestions!
-
 ---
 
-**Made with ❤️ using React, Tailwind CSS, and Three.js**
-=======
-# my-portfolio
->>>>>>> 87fe461c7c9b010936ce26def5a1ea87fd61ff68
+**Made with ❤️ by [Kaushal Thakur](https://github.com/kau-shal2424)**
