@@ -8,11 +8,11 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <div id="home" className="h-screen w-full bg-transparent text-white relative overflow-hidden">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between h-full px-4">
+        <div id="home" className="min-h-screen w-full bg-transparent text-white relative overflow-hidden pt-20 md:pt-0">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-screen px-4 py-10 md:py-0">
 
                 {/* Text Section */}
-                <div className="flex flex-col justify-center h-full w-full md:w-1/2 z-10">
+                <div className="flex flex-col justify-center w-full md:w-1/2 z-10">
                     {/* Name Introduction */}
                     <motion.p
                         initial={{ opacity: 0, y: -30 }}
@@ -136,7 +136,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1, y: [0, 10, 0] }}
                         transition={{ delay: 2, duration: 1.5, repeat: Infinity }}
-                        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none"
+                        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none hidden md:block"
                     >
                         <div className="flex flex-col items-center gap-2 text-gray-400">
                             <span className="text-sm">Scroll Down</span>
@@ -148,7 +148,7 @@ const Hero = () => {
                 </div>
 
                 {/* 3D Visual Section */}
-                <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-30 md:opacity-100 md:relative pointer-events-none md:pointer-events-auto">
+                <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-30 md:opacity-100 md:relative pointer-events-none md:pointer-events-auto z-0">
                     <Hero3D />
                 </div>
             </div>
