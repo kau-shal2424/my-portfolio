@@ -3,7 +3,7 @@
 
 A stunning, professional portfolio website built with React, Tailwind CSS, and Three.js. Perfect for Computer Science students and Software Developers looking for internships and full-time roles.
 
-![Portfolio Preview](https://via.placeholder.com/800x400?text=Portfolio+Preview)
+TO see my Portfolio:Please visit-https://kaushals-portfolio2424.vercel.app/
 
 ## ✨ Features
 
