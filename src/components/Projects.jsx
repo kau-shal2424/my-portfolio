@@ -15,7 +15,7 @@ const Projects = () => {
             title: 'E-Portfolio Website',
             description: 'A modern portfolio website built with React, Tailwind CSS, and Three.js for 3D elements.',
             tech: ['React', 'Tailwind', 'VITE', 'Three.js', 'Framer Motion'],
-            src: 'E-Portfolio.png',
+            src: '/e-portfolio.png',
             github: 'https://github.com/kau-shal2424/my-portfolio',
             demo: 'https://kaushals-portfolio2424.vercel.app/',
         },
@@ -24,7 +24,7 @@ const Projects = () => {
             title: 'E-KART',
             description: 'A full-stack e-commerce web application with user shopping features and an admin analytics dashboard built using React and Flask.',
             tech: ['React', 'Tailwind', 'FLASK', 'MYSQL'],
-            src: 'E-kart.png',
+            src: '/e-kart.png',
             github: 'https://github.com/kau-shal2424/E-Kart',
         },
         {
@@ -32,7 +32,7 @@ const Projects = () => {
             title: 'Braille Bridge',
             description: 'BrailleBridge is an AI-powered accessibility platform that converts documents and images into Braille and speech using OCR and multi-language translation.',
             tech: ['React.js', 'FAST API', 'FLASK', 'OCR (Tesseract)', 'Braille Translation (Louis)', 'Text-to-Speech APIs (gTTS / pyttsx3)'],
-            src: 'Braille Bridge.png',
+            src: '/braille-bridge.png',
             github: 'https://github.com/kau-shal2424/BrailleBridge',
         },
         {
@@ -40,7 +40,7 @@ const Projects = () => {
             title: 'Smart Weather Predictor',
             description: 'A machine learning–based web application that predicts temperature, humidity, and wind speed using real-time data from the OpenWeatherMap API.',
             tech: ['Flask', 'Python', 'OPENWEATHERMAP API', 'SCIKIT-LEARN', 'PANDAS', 'NUMPY'],
-            src: 'Weather Predictor.png',
+            src: '/weather-predictor.png',
             github: 'https://github.com/kau-shal2424/Smart_weather_predicitor',
             demo: 'https://weather-vision.onrender.com/',
         },
@@ -49,7 +49,7 @@ const Projects = () => {
             title: 'Flight Seat Allocator',
             description: 'A responsive web application built using React that provides an interactive user interface and optimized production build for deployment.',
             tech: ['React.js', 'CRA', 'GREEDY ALGORYTHM', 'FIREBASE', 'CSS'],
-            src: 'Flight Seat Allocator.png',
+            src: '/flight-seat-allocator.png',
             github: 'https://github.com/kau-shal2424/Flight-Seat-Allocator',
         },
         {
@@ -57,7 +57,7 @@ const Projects = () => {
             title: 'Distributed Mini File System',
             description: 'A distributed file system implementation with a React frontend, similar to Google File System (GFS) and Hadoop Distributed File System (HDFS).',
             tech: ['React', 'Python', 'Flask(REST API)', 'SOCKET PROGRAMMING'],
-            src: 'DMFS.png',
+            src: '/dmfs.png',
             github: 'https://github.com/kau-shal2424/Distributed-Mini-File-System',
         },
     ];
