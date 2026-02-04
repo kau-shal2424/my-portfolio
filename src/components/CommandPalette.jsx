@@ -13,6 +13,9 @@ const CommandPalette = () => {
                 e.preventDefault();
                 setOpen((open) => !open);
             }
+            if (e.key === 'Escape') {
+                setOpen(false);
+            }
         };
 
         document.addEventListener('keydown', down);
@@ -26,25 +29,19 @@ const CommandPalette = () => {
         { icon: <FaBriefcase />, label: 'Projects', action: 'projects', type: 'navigation' },
         { icon: <FaClock />, label: 'Experience', action: 'experience', type: 'navigation' },
         { icon: <FaEnvelope />, label: 'Contact', action: 'contact', type: 'navigation' },
-        { icon: <FaGithub />, label: 'GitHub Profile', action: 'https://github.com', type: 'link' },
-        { icon: <FaLinkedin />, label: 'LinkedIn Profile', action: 'https://linkedin.com', type: 'link' },
-        { icon: <FaDownload />, label: 'Download Resume', action: '/resume.pdf', type: 'download' },
+        { icon: <FaGithub />, label: 'GitHub Profile', action: 'https://github.com/kau-shal2424', type: 'link' },
+        { icon: <FaLinkedin />, label: 'LinkedIn Profile', action: 'https://www.linkedin.com/in/kaushal-thakur2424', type: 'link' },
+        { icon: <FaDownload />, label: 'Download Resume', action: 'https://drive.google.com/file/d/1xczIe0rKt1P6GLR9sA74Nk8lfIDDbUjb/view?usp=sharing', type: 'link' },
     ];
 
     const handleSelect = (cmd) => {
         if (cmd.type === 'navigation') {
-            // Scroll to section
             const element = document.getElementById(cmd.action);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
         } else if (cmd.type === 'link') {
             window.open(cmd.action, '_blank');
-        } else if (cmd.type === 'download') {
-            const link = document.createElement('a');
-            link.href = cmd.action;
-            link.download = 'Resume.pdf';
-            link.click();
         }
         setOpen(false);
     };
@@ -73,7 +70,10 @@ const CommandPalette = () => {
                         className="w-full bg-transparent border-none outline-none py-4 text-white placeholder-gray-400"
                         autoFocus
                     />
-                    <kbd className="hidden sm:inline-block px-2 py-1 text-xs font-semibold text-gray-400 bg-gray-700 border border-gray-600 rounded">
+                    <kbd
+                        className="hidden sm:inline-block px-2 py-1 text-xs font-semibold text-gray-400 bg-gray-700 border border-gray-600 rounded cursor-pointer hover:bg-gray-600 transition-colors"
+                        onClick={() => setOpen(false)}
+                    >
                         ESC
                     </kbd>
                 </div>
@@ -87,8 +87,9 @@ const CommandPalette = () => {
                         {commands.filter(cmd => cmd.type === 'navigation').map((cmd, index) => (
                             <Command.Item
                                 key={index}
+                                value={cmd.label}
                                 onSelect={() => handleSelect(cmd)}
-                                className="flex items-center gap-3 px-3 py-3 rounded-lg cursor-pointer text-gray-300 hover:bg-accent/20 hover:text-white transition-colors mb-1"
+                                className="flex items-center gap-3 px-3 py-3 rounded-lg cursor-pointer text-gray-300 hover:bg-accent/20 hover:text-white aria-selected:bg-accent/20 aria-selected:text-white transition-colors mb-1"
                             >
                                 <span className="text-accent">{cmd.icon}</span>
                                 <span>{cmd.label}</span>
@@ -100,21 +101,9 @@ const CommandPalette = () => {
                         {commands.filter(cmd => cmd.type === 'link').map((cmd, index) => (
                             <Command.Item
                                 key={index}
+                                value={cmd.label}
                                 onSelect={() => handleSelect(cmd)}
-                                className="flex items-center gap-3 px-3 py-3 rounded-lg cursor-pointer text-gray-300 hover:bg-accent/20 hover:text-white transition-colors mb-1"
-                            >
-                                <span className="text-accent">{cmd.icon}</span>
-                                <span>{cmd.label}</span>
-                            </Command.Item>
-                        ))}
-                    </Command.Group>
-
-                    <Command.Group heading="Actions" className="text-gray-400 text-xs font-semibold px-2 py-2 mt-2">
-                        {commands.filter(cmd => cmd.type === 'download').map((cmd, index) => (
-                            <Command.Item
-                                key={index}
-                                onSelect={() => handleSelect(cmd)}
-                                className="flex items-center gap-3 px-3 py-3 rounded-lg cursor-pointer text-gray-300 hover:bg-accent/20 hover:text-white transition-colors mb-1"
+                                className="flex items-center gap-3 px-3 py-3 rounded-lg cursor-pointer text-gray-300 hover:bg-accent/20 hover:text-white aria-selected:bg-accent/20 aria-selected:text-white transition-colors mb-1"
                             >
                                 <span className="text-accent">{cmd.icon}</span>
                                 <span>{cmd.label}</span>

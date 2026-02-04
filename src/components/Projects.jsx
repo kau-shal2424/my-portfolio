@@ -4,7 +4,6 @@ import { FaGithub, FaExternalLinkAlt, FaFilter } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
-    const [filter, setFilter] = useState('all');
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.1,
@@ -13,85 +12,55 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: 'AI Portfolio Website',
+            title: 'E-Portfolio Website',
             description: 'A modern portfolio website built with React, Tailwind CSS, and Three.js for 3D elements.',
-            tech: ['React', 'Tailwind', 'Three.js'],
-            category: 'frontend',
-            src: 'https://via.placeholder.com/400x300',
-            github: 'https://github.com',
-            demo: 'https://demo.com',
-            featured: true,
+            tech: ['React', 'Tailwind', 'VITE', 'Three.js', 'Framer Motion'],
+            src: 'E-Portfolio.png',
+            github: 'https://github.com/kau-shal2424/my-portfolio',
+            demo: 'https://kaushals-portfolio2424.vercel.app/',
         },
         {
             id: 2,
-            title: 'E-Commerce Platform',
-            description: 'Full-stack e-commerce application with payment gateway integration and admin dashboard.',
-            tech: ['Next.js', 'MongoDB', 'Stripe'],
-            category: 'fullstack',
-            src: 'https://via.placeholder.com/400x300',
-            github: 'https://github.com',
-            demo: 'https://demo.com',
-            featured: true,
+            title: 'E-KART',
+            description: 'A full-stack e-commerce web application with user shopping features and an admin analytics dashboard built using React and Flask.',
+            tech: ['React', 'Tailwind', 'FLASK', 'MYSQL'],
+            src: 'E-kart.png',
+            github: 'https://github.com/kau-shal2424/E-Kart',
         },
         {
             id: 3,
-            title: 'Chat Application',
-            description: 'Real-time chat app using Socket.io and MERN stack with authentication.',
-            tech: ['React', 'Node.js', 'Socket.io'],
-            category: 'fullstack',
-            src: 'https://via.placeholder.com/400x300',
-            github: 'https://github.com',
-            demo: 'https://demo.com',
-            featured: false,
+            title: 'Braille Bridge',
+            description: 'BrailleBridge is an AI-powered accessibility platform that converts documents and images into Braille and speech using OCR and multi-language translation.',
+            tech: ['React.js', 'FAST API', 'FLASK', 'OCR (Tesseract)', 'Braille Translation (Louis)', 'Text-to-Speech APIs (gTTS / pyttsx3)'],
+            src: 'Braille Bridge.png',
+            github: 'https://github.com/kau-shal2424/BrailleBridge',
         },
         {
             id: 4,
-            title: 'Task Management Tool',
-            description: 'Kanban-style task manager with drag-and-drop functionality.',
-            tech: ['React', 'Redux', 'Firebase'],
-            category: 'frontend',
-            src: 'https://via.placeholder.com/400x300',
-            github: 'https://github.com',
-            demo: 'https://demo.com',
-            featured: false,
+            title: 'Smart Weather Predictor',
+            description: 'A machine learning–based web application that predicts temperature, humidity, and wind speed using real-time data from the OpenWeatherMap API.',
+            tech: ['Flask', 'Python', 'OPENWEATHERMAP API', 'SCIKIT-LEARN', 'PANDAS', 'NUMPY'],
+            src: 'Weather Predictor.png',
+            github: 'https://github.com/kau-shal2424/Smart_weather_predicitor',
+            demo: 'https://weather-vision.onrender.com/',
         },
         {
             id: 5,
-            title: 'Weather Dashboard',
-            description: 'Interactive weather dashboard with real-time data and beautiful visualizations.',
-            tech: ['React', 'API', 'Charts.js'],
-            category: 'frontend',
-            src: 'https://via.placeholder.com/400x300',
-            github: 'https://github.com',
-            demo: 'https://demo.com',
-            featured: false,
+            title: 'Flight Seat Allocator',
+            description: 'A responsive web application built using React that provides an interactive user interface and optimized production build for deployment.',
+            tech: ['React.js', 'CRA', 'GREEDY ALGORYTHM', 'FIREBASE', 'CSS'],
+            src: 'Flight Seat Allocator.png',
+            github: 'https://github.com/kau-shal2424/Flight-Seat-Allocator',
         },
         {
             id: 6,
-            title: 'REST API Backend',
-            description: 'Scalable REST API with authentication, authorization, and database integration.',
-            tech: ['Node.js', 'Express', 'PostgreSQL'],
-            category: 'backend',
-            src: 'https://via.placeholder.com/400x300',
-            github: 'https://github.com',
-            demo: 'https://demo.com',
-            featured: false,
+            title: 'Distributed Mini File System',
+            description: 'A distributed file system implementation with a React frontend, similar to Google File System (GFS) and Hadoop Distributed File System (HDFS).',
+            tech: ['React', 'Python', 'Flask(REST API)', 'SOCKET PROGRAMMING'],
+            src: 'DMFS.png',
+            github: 'https://github.com/kau-shal2424/Distributed-Mini-File-System',
         },
     ];
-
-    const filters = [
-        { id: 'all', label: 'All Projects' },
-        { id: 'featured', label: 'Featured' },
-        { id: 'frontend', label: 'Frontend' },
-        { id: 'backend', label: 'Backend' },
-        { id: 'fullstack', label: 'Full Stack' },
-    ];
-
-    const filteredProjects = filter === 'all'
-        ? projects
-        : filter === 'featured'
-            ? projects.filter(p => p.featured)
-            : projects.filter(p => p.category === filter);
 
     return (
         <div id="projects" className="w-full bg-black/20 backdrop-blur-sm text-white py-20">
@@ -107,28 +76,9 @@ const Projects = () => {
                     <p className="py-6">Check out some of my recent work</p>
                 </div>
 
-                {/* Filter Buttons */}
-                <div className="flex flex-wrap gap-3 mb-8" ref={ref}>
-                    {filters.map((f) => (
-                        <motion.button
-                            key={f.id}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => setFilter(f.id)}
-                            className={`px-4 py-2 rounded-full font-medium transition-all duration-300 flex items-center gap-2 ${filter === f.id
-                                ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg shadow-accent/50'
-                                : 'bg-secondary text-gray-400 hover:text-white border border-gray-600'
-                                }`}
-                        >
-                            <FaFilter size={12} />
-                            {f.label}
-                        </motion.button>
-                    ))}
-                </div>
-
                 {/* Projects Grid */}
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
-                    {filteredProjects.map((project, index) => (
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0" ref={ref}>
+                    {projects.map((project, index) => (
                         <motion.div
                             key={project.id}
                             initial={{ opacity: 0, y: 50 }}
@@ -147,12 +97,7 @@ const Projects = () => {
                                 className="relative rounded-xl overflow-hidden shadow-lg shadow-gray-900 bg-secondary/50 backdrop-blur-sm border border-gray-700 hover:border-accent/50 h-full"
                                 style={{ transformStyle: 'preserve-3d' }}
                             >
-                                {/* Featured Badge */}
-                                {project.featured && (
-                                    <div className="absolute top-4 right-4 z-10 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-                                        ⭐ Featured
-                                    </div>
-                                )}
+
 
                                 {/* Image */}
                                 <div className="relative overflow-hidden h-48">
@@ -220,16 +165,7 @@ const Projects = () => {
                     ))}
                 </div>
 
-                {/* No Results Message */}
-                {filteredProjects.length === 0 && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className="text-center py-12 text-gray-400"
-                    >
-                        <p className="text-xl">No projects found in this category.</p>
-                    </motion.div>
-                )}
+
             </div>
         </div>
     );

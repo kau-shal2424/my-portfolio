@@ -12,7 +12,7 @@ const About = () => {
 
     const codeSnippet = `const developer = {
   name: "Kaushal Thakur",
-  role: "Full Stack Developer",
+  role: "Full Stack Developer","Data Analyst",
   location: "Munger, Bihar, India",
   
 skills: [
@@ -114,7 +114,7 @@ skills: [
                         initial={{ opacity: 0, x: 50 }}
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.3 }}
-                        className="relative w-full max-w-full overflow-hidden"
+                        className="relative w-full max-w-full"
                     >
                         {/* Code Editor Window */}
                         <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-700 bg-[#1e1e1e] w-full max-w-full">
@@ -129,7 +129,7 @@ skills: [
                             </div>
 
                             {/* Code Content */}
-                            <div className="relative overflow-x-auto max-w-full">
+                            <div className="relative overflow-x-auto max-w-full custom-scrollbar">
                                 <SyntaxHighlighter
                                     language="javascript"
                                     style={vscDarkPlus}
@@ -141,7 +141,6 @@ skills: [
                                         maxWidth: '100%',
                                     }}
                                     showLineNumbers
-                                    wrapLongLines={true}
                                 >
                                     {codeSnippet}
                                 </SyntaxHighlighter>
@@ -168,7 +167,7 @@ skills: [
                                 repeat: Infinity,
                                 ease: "easeInOut"
                             }}
-                            className="absolute -top-4 -right-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg font-bold text-sm"
+                            className="absolute -top-4 -right-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg font-bold text-sm z-10"
                         >
                             💻 Clean Code Advocate
                         </motion.div>

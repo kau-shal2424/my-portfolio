@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import SEO from './components/SEO'
-import LoadingScreen from './components/LoadingScreen'
+
 import CommandPalette from './components/CommandPalette'
 import CursorTrail from './components/CursorTrail'
 import UniverseBackground from './components/UniverseBackground'
@@ -18,7 +18,7 @@ function App() {
   return (
     <HelmetProvider>
       <SEO />
-      <LoadingScreen />
+
       <CommandPalette />
       <CursorTrail />
       <UniverseBackground />
