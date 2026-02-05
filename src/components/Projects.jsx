@@ -64,7 +64,7 @@ const Projects = () => {
 
     return (
         <div id="projects" className="w-full bg-black/20 backdrop-blur-sm text-white py-20">
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+            <div className="max-w-screen-lg px-4 sm:px-6 mx-auto flex flex-col justify-center w-full">
                 <div className="pb-8">
                     <motion.p
                         initial={{ opacity: 0, y: -20 }}

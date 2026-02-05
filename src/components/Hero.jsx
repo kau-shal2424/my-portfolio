@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <div id="home" className="min-h-screen md:h-screen w-full bg-transparent text-white relative overflow-hidden pt-20 md:pt-0">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-screen md:h-full px-4 py-10 md:py-0">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-screen px-4 sm:px-6 py-10 md:py-0">
 
                 {/* Text Section */}
                 <div className="flex flex-col justify-center w-full md:w-1/2 z-10">

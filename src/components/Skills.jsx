@@ -87,7 +87,7 @@ const Skills = () => {
             {/* Background elements to enhance universe feel */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-purple-900/10 to-black/0 pointer-events-none" />
 
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full relative z-20">
+            <div className="max-w-screen-lg px-4 sm:px-6 mx-auto flex flex-col justify-center w-full relative z-20">
                 {/* Section Header */}
                 {/* Section Header */}
                 <div className="pb-8">

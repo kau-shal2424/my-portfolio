@@ -12,7 +12,7 @@ const About = () => {
 
     const codeSnippet = `const developer = {
   name: "Kaushal Thakur",
-  role: "Full Stack Developer","Data Analyst",
+  role: ["Full Stack Developer", "Data Analyst"],
   location: "Munger, Bihar, India",
   
 skills: [
@@ -45,7 +45,7 @@ skills: [
 
     return (
         <div id="about" className="w-full min-h-screen bg-black/20 backdrop-blur-sm text-white py-20">
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+            <div className="max-w-screen-lg px-4 sm:px-6 mx-auto flex flex-col justify-start md:justify-center w-full">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -64,7 +64,7 @@ skills: [
                             initial={{ opacity: 0, x: -50 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ delay: 0.2 }}
-                            className="text-xl leading-relaxed"
+                            className="text-base sm:text-lg md:text-xl leading-relaxed"
                         >
                             I am a  <span className="text-accent font-semibold">technology-focused developer</span> who enjoys building
                             <span className="text-accent font-semibold"> intelligent and scalable digital solutions</span> that create real-world impact.
@@ -76,7 +76,7 @@ skills: [
                             initial={{ opacity: 0, x: -50 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ delay: 0.4 }}
-                            className="text-xl leading-relaxed"
+                            className="text-base sm:text-lg md:text-xl leading-relaxed"
                         >
                             I continuously explore <span className="text-accent font-semibold">emerging technologies</span> and innovative tools to refine my workflow and deliver scalable, high-quality solutions.
                             I focus on strengthening <span className="text-accent font-semibold">analytical thinking and problem-solving</span> to build efficient and future-ready digital products.
@@ -129,16 +129,23 @@ skills: [
                             </div>
 
                             {/* Code Content */}
-                            <div className="relative overflow-x-auto max-w-full custom-scrollbar">
+                            <div className="relative overflow-auto max-h-[400px] sm:max-h-[500px] w-full custom-scrollbar">
                                 <SyntaxHighlighter
                                     language="javascript"
                                     style={vscDarkPlus}
                                     customStyle={{
                                         margin: 0,
                                         padding: '1.5rem',
-                                        fontSize: '0.875rem',
                                         background: '#1e1e1e',
                                         maxWidth: '100%',
+                                        fontSize: '0.875rem',
+                                        lineHeight: '1.5',
+                                    }}
+                                    codeTagProps={{
+                                        style: {
+                                            whiteSpace: 'pre-wrap',
+                                            wordBreak: 'break-all',
+                                        }
                                     }}
                                     showLineNumbers
                                 >
@@ -167,7 +174,7 @@ skills: [
                                 repeat: Infinity,
                                 ease: "easeInOut"
                             }}
-                            className="absolute -top-4 -right-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg font-bold text-sm z-10"
+                            className="absolute top-2 right-2 sm:-top-4 sm:-right-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg font-bold text-sm z-10"
                         >
                             💻 Clean Code Advocate
                         </motion.div>
