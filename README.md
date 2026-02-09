@@ -1,4 +1,4 @@
-# Modern Portfolio Website 🚀
+# Modern E-Portfolio Website 🚀
 
 A stunning, professional portfolio website built with **React**, **Tailwind CSS**, and **Three.js**. Designed for Computer Science students and Software Developers looking to showcase their technical expertise.
 
