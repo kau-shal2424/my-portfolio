@@ -113,7 +113,7 @@ const Hero = () => {
                         </motion.a>
                         <motion.a
                             whileHover={{ scale: 1.2, rotate: 5 }}
-                            href="https://www.instagram.com/kau_shal2004"
+                            href="https://www.instagram.com/kau_shal.raw"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-3xl hover:text-accent transition duration-300"

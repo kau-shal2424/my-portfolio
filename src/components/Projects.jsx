@@ -12,6 +12,14 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
+            title: 'Code Morpher',
+            description: 'A source-to-source transpiler that translates Python code into JavaScript, Java, C++, and C. Built with a modular and extensible architecture, enabling efficient code conversion and future support for additional programming languages.',
+            tech: ['React', 'JDK', 'ANTLR4', 'MAVEN', 'Three.js'],
+            src: '/Code_Morpher.png',
+            github: 'https://github.com/kau-shal2424/Code-Morpher',
+        },
+        {
+            id: 2,
             title: 'E-Portfolio Website',
             description: 'A modern portfolio website built with React, Tailwind CSS, and Three.js for 3D elements.',
             tech: ['React', 'Tailwind', 'VITE', 'Three.js', 'Framer Motion'],
@@ -20,7 +28,7 @@ const Projects = () => {
             demo: 'https://kaushals-portfolio2424.vercel.app/',
         },
         {
-            id: 2,
+            id: 3,
             title: 'E-KART',
             description: 'A full-stack e-commerce web application with user shopping features and an admin analytics dashboard built using React and Flask.',
             tech: ['React', 'Tailwind', 'FLASK', 'MYSQL'],
@@ -28,7 +36,7 @@ const Projects = () => {
             github: 'https://github.com/kau-shal2424/E-Kart',
         },
         {
-            id: 3,
+            id: 4,
             title: 'Braille Bridge',
             description: 'BrailleBridge is an AI-powered accessibility platform that converts documents and images into Braille and speech using OCR and multi-language translation.',
             tech: ['React.js', 'FAST API', 'FLASK', 'OCR (Tesseract)', 'Braille Translation (Louis)', 'Text-to-Speech APIs (gTTS / pyttsx3)'],
@@ -36,7 +44,7 @@ const Projects = () => {
             github: 'https://github.com/kau-shal2424/BrailleBridge',
         },
         {
-            id: 4,
+            id: 5,
             title: 'Smart Weather Predictor',
             description: 'A machine learning–based web application that predicts temperature, humidity, and wind speed using real-time data from the OpenWeatherMap API.',
             tech: ['Flask', 'Python', 'OPENWEATHERMAP API', 'SCIKIT-LEARN', 'PANDAS', 'NUMPY'],
@@ -45,7 +53,7 @@ const Projects = () => {
             demo: 'https://weather-vision.onrender.com/',
         },
         {
-            id: 5,
+            id: 6,
             title: 'Flight Seat Allocator',
             description: 'A responsive web application built using React that provides an interactive user interface and optimized production build for deployment.',
             tech: ['React.js', 'CRA', 'GREEDY ALGORYTHM', 'FIREBASE', 'CSS'],
@@ -53,7 +61,7 @@ const Projects = () => {
             github: 'https://github.com/kau-shal2424/Flight-Seat-Allocator',
         },
         {
-            id: 6,
+            id: 7,
             title: 'Distributed Mini File System',
             description: 'A distributed file system implementation with a React frontend, similar to Google File System (GFS) and Hadoop Distributed File System (HDFS).',
             tech: ['React', 'Python', 'Flask(REST API)', 'SOCKET PROGRAMMING'],

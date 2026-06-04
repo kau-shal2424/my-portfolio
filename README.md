@@ -25,50 +25,6 @@ A stunning, professional portfolio website built with **React**, **Tailwind CSS*
 
 ---
 
-## 🚀 Projects
-
-### 1. E-Portfolio Website
-A modern portfolio website built with React, Tailwind CSS, and Three.js for 3D elements.
-- **Tech Stack:** React, Tailwind, Vite, Three.js, Framer Motion
-- [GitHub Repo](https://github.com/kau-shal2424/my-portfolio) | [Live Demo](https://kaushals-portfolio2424.vercel.app/)
-
-### 2. E-KART
-A full-stack e-commerce web application with user shopping features and an admin analytics dashboard.
-- **Tech Stack:** React, Tailwind, Flask, MySQL
-- [GitHub Repo](https://github.com/kau-shal2424/E-Kart)
-
-### 3. Braille Bridge
-An AI-powered accessibility platform that converts documents and images into Braille and speech using OCR and multi-language translation.
-- **Tech Stack:** React.js, FastAPI, Flask, OCR (Tesseract), Braille Translation (Louis), Text-to-Speech APIs
-- [GitHub Repo](https://github.com/kau-shal2424/BrailleBridge)
-
-### 4. Smart Weather Predictor
-A machine learning–based web application that predicts temperature, humidity, and wind speed using real-time data from the OpenWeatherMap API.
-- **Tech Stack:** Flask, Python, OpenWeatherMap API, Scikit-learn, Pandas, Numpy
-- [GitHub Repo](https://github.com/kau-shal2424/Smart_weather_predicitor) | [Live Demo](https://weather-vision.onrender.com/)
-
-### 5. Flight Seat Allocator
-A responsive web application built using React that provides an interactive user interface for seat allocation using greedy algorithms.
-- **Tech Stack:** React.js, CRA, Greedy Algorithm, Firebase, CSS
-- [GitHub Repo](https://github.com/kau-shal2424/Flight-Seat-Allocator)
-
-### 6. Distributed Mini File System (DMFS)
-A distributed file system implementation with a React frontend, similar to GFS and HDFS.
-- **Tech Stack:** React, Python, Flask (REST API), Socket Programming
-- [GitHub Repo](https://github.com/kau-shal2424/Distributed-Mini-File-System)
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React 19, Vite, Tailwind CSS, Framer Motion
-- **3D Graphics:** Three.js, React Three Fiber, Drei
-- **Backend (Project Specific):** Flask, FastAPI, Python, Node.js
-- **Database:** MySQL, Firebase
-- **Tools:** Git, Vercel, npm
-
----
-
 ## 📦 Getting Started
 
 1. **Clone the repository**

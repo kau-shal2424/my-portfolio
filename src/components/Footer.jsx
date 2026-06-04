@@ -15,7 +15,7 @@ const Footer = () => {
                     <a href="https://twitter.com/Kau_shal2424" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-accent transition duration-300">
                         <FaTwitter />
                     </a>
-                    <a href="https://www.instagram.com/kau_shal2004" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-accent transition duration-300">
+                    <a href="https://www.instagram.com/kau_shal.raw" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-accent transition duration-300">
                         <FaInstagram />
                     </a>
                     <a href="mailto:thakurkaushal2424@gmail.com" className="text-2xl hover:text-accent transition duration-300">
